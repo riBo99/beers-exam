@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+body {
+    background-color: #ffeedf;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    color: #145434;
+    border-bottom: 2px solid #145434;
+    padding: 0 15px;
+}
+
+header p {
+    font-size: 36px;
+    font-weight: 700;
+
+}
+
+.cards-container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center;; */
+    gap: 60px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 100px auto;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 300px;
+    z-index: 1;
+    padding: 40px 30px;
+    color: #ffeedf;
+    background-color: #145434;
+}
+
+.title {
+    font-size: 36px;
+    min-height: 70px;
+    border-bottom: 2px solid #ffeedf;
+    padding-bottom: 60px;
+}
+
+
+.number {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    z-index: 2;
+    border: 1px solid #145434;
+    background-color: #ffeedf;
+    border-radius: 50%;
+    color: #145434;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub {
+    font-size: 18px;
+}
+
+.text {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    font-size: 14px;
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    font-family: 'Space Grotesk', sans-serif;
+    border: 1px solid #145434;
+    background-color: #ffeedf;
+}
+
+button:hover {
+    background-color: #145434;
+}
